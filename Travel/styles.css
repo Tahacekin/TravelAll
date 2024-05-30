@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+  --main-color: #e84242;
+  --black-color: #181616;
+--border:0.1rem solid rgba(255,255,255, 0.4);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+  }
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+
+.logo img {
+    height: 7rem;
+  
+  }
+  body{
+    background: url("https://i.pinimg.com/736x/b2/fb/21/b2fb21f206c56acc2007ed7e587d9770.jpg");
+    background-size :100%;
+    
+    
+    }
+ 
+  .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /*! header start */
+  .header .logo img{
+    height: 14rem;
+    width: 15rem;
+      }
+
+      .header{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7%;
+        margin: 2rem 7%;
+
+        border-radius: 30rem;
+        box-shadow: 0px 0px 17px -2px rgb(0,0,0,0.75);
+        position: sticky;
+        
+        z-index: 1000;
+}
+.header .navbar a{
+    margin: 2rem;
+    font-size: 2rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+  }
+ 
+.header .navbar a:hover{
+  border-color: black;
+  padding-bottom: 0.5rem;
+
+
+}
+.header .buttons button{
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+
+
+}
+/*! header end */
+
+
+
+
+.left-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 70px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 100px;
+  width: 80%; /* Sayfanın genişliğinin %80'i kadar olacak */
+  margin-right: auto; /* Sayfanın sağ kenarına yapıştır */
+  margin-left: 100px;
+  margin-top: 50px; /* Sayfanın en üstüne yerleştir */
+  text-align: center; /* İçerikleri merkezlemek için */
+  max-width: 700px; /* Maksimum genişlik belirle */
+  height: 700px; /* Otomatik yükseklik */
+  display: flex; /* Flexbox kullanarak içeriği dikey hizala */
+  flex-direction: column; /* İçeriği dikey hizala */
+  justify-content: center; /* İçeriği dikeyde merkezle */
+}
+.container {
+  display: flex;
+  justify-content: flex-start; /* Kutuları sola hizala */
+}
+
+.login-container
+ {
+  margin-top: 58px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 70px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 100px;
+  width: 48%; /* Sayfanın genişliğinin yarısı kadar olacak */
+  text-align: center; /* İçerikleri merkezlemek için */
+  max-width: 700px; /* Maksimum genişlik belirle */
+  height: 700px; /* Sabit yükseklik */
+  display: inline-block; /* Yan yana yerleştir */
+  vertical-align: top; /* Üstten hizalama */
+  margin-right: 0; /* Kutular arasındaki boşluğu kapat */
+}
+
+.login-container {
+  margin-right: 100px; /* Aralarındaki boşluğu ayarla */
+
+}
+
+.left-container h2 {
+  color: #ffffff; /* Başlık rengini beyaz yap */
+  text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    margin-top: 300px;
+}
+.left-container h3 {
+  color: #ffffff; /* Başlık rengini beyaz yap */
+ 
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 300px;
+}
+
+
+
+
+
+
+
+/* giriş yap kutunun içindekilerin cssi start */
+
+
+
+
+
+.login-container h2 {
+  color: #000000;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="email"],
+.login-container form input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.login-container button.signup-button {
+  width: 50%;
+  padding: 20px;
+  background-color: #0f0113;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button.signup-button:hover {
+  background-color: #060007;
+}
+
+.login-container p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.login-container p a {
+  color: #561064;
+  text-decoration: none;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* giriş yap kutunun içindekilerin cssi  end*/

@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+  --main-color: #e84242;
+  --black-color: #181616;
+--border:0.1rem solid rgba(255,255,255, 0.4);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+  }
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+
+.logo img {
+    height: 7rem;
+  
+  }
+  body{
+    background: url("https://i.pinimg.com/736x/b2/fb/21/b2fb21f206c56acc2007ed7e587d9770.jpg");
+    background-size :100%;
+    background-position: center;
+    
+
+  }
+ 
+  .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+   
+
+
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  .heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+    
+  
+  
+  
+  
+  }
+  .heading span{
+    color: var(--black-color);
+  
+    text-transform: uppercase;
+  
+  
+  }
+
+  .nereye{
+    color: #fffefe;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+  
+  
+  
+  }
+  
+/*! header start */
+  .header .logo img{
+    height: 14rem;
+    width: 15rem;
+      }
+
+      .header{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7%;
+        margin: 2rem 7%;
+
+        border-radius: 30rem;
+        box-shadow: 0px 0px 17px -2px rgb(0,0,0,0.75);
+        position: sticky;
+        
+        z-index: 1000;
+}
+.header .navbar a{
+    margin: 2rem;
+    font-size: 2rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+  }
+  .header .navbar .active,
+.header .navbar a:hover{
+  border-color: black;
+  padding-bottom: 0.5rem;
+
+
+}
+.header .buttons button{
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+
+
+}
+/*! header end */
+
+ /*! menu start */
+ 
+  /*! menu end */
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px; /* Kutunun genişliği */
+    margin: 0 auto; /* Otomatik yatay ortalama */
+    background-color: #f1f1f1;
+    border-radius: 50px; /* Yuvarlatılmış köşeler */
+    padding: 15px;
+  }
+  
+  input[type="text"] {
+    padding: 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    width: 80%;
+    font-size: 18px;
+  }
+  
+  button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #060806;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+   /*! tatil önerileri start */
+   .tatil-önerileri-container{
+    margin-left:20px;
+    margin-right:20px;
+    
+
+
+   }
+   .tatil-önerileri{
+    list-style: none;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    transform: translateX(0);
+
+   }
+
+   .tatil-önerileri-wrapper{
+    overflow: hidden;
+    position: relative;
+   }
+   .tatil-item{
+    position: relative;
+   }
+   .tatil-item:hover .tatil-item-title ,
+   .tatil-item:hover .tatil-item-buttons{
+    opacity: 1;
+   }
+
+   .tatil-item:hover .tatil-item-img{
+    transform: scale(1.2);
+    margin :0 30px;
+    transition: 1s all ease-in-out;
+   }
+
+   .tatil-item-img{
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+    
+   }
+   .tatil-item-title{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    padding: 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+   
+    transition: 1s all ease-in-out;
+
+
+
+   }
+   .tatil-item-buttons{
+    background-color: rgb(210, 207, 207);
+    padding: 10px;
+    
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    display: flex;
+    column-gap: 20px;
+    opacity: 0;
+    
+    
+    transition: 1s all ease-in-out;
+  }
+
+  .tatil-item-buttons i{
+    cursor:pointer;
+    opacity: .5;
+    font-size: 20px;
+    transition: 0.5s all ease;
+  
+
+  }
+  .tatil-item-buttons i:hover{
+    opacity: 1;
+  }
+  .arrow{
+    width: 100px;
+    display: flex;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    opacity: .5;
+    transition: .5s ease all;
+    cursor: pointer;
+
+}
+.arrow:hover{
+    opacity: 1;
+}
+.weatherForm{
+  margin: 20px;
+}
+.cityInput{
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 20%, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+}
+button[type="submit"]{
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}button[type="submit"]:hover{
+  background-color: hsl(122, 39%, 40%);
+}
+.card{
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+
+}
+p{
+  font-size: 1.5rem;
+  margin: 5px 0;  
+}
+.cityDisplay, .tempDisplay{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+}
+.humidityDisplay{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.descDisplay{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.weatherEmoji{
+  margin: 0;
+  font-size: 7.5rem;
+
+}
+.errorDisplay{
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+
+
